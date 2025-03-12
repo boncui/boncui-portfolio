@@ -1,3 +1,5 @@
+//project-card.tsx
+///Users/boncui/Desktop/Projects/Personal Projects/boncui-portfolio/Portfolio/portfolio/src/app/components/project-card.tsx
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Github } from "lucide-react"
 import Image from "next/image"

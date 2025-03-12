@@ -1,3 +1,4 @@
+// action.ts
 "use server"
 
 export async function submitContactForm(formData: FormData) {

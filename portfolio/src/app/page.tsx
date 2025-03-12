@@ -37,12 +37,14 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Full Stack Developer
+                <h1 className="text-5xl font-bold tracking-tighter">
+                  David Cui
                 </h1>
+                <h2 className="text-3xl tracking-tighter">
+                  Engineer | Innovator | Artist
+                </h2>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Building digital experiences with modern technologies. Focused on creating elegant solutions to
-                  complex problems.
+                Creating elegant solutions from complex problems.
                 </p>
               </div>
               <div className="space-x-4">

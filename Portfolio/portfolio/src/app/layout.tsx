@@ -17,9 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className={`min-h-screen bg-background font-sans antialiased ${inter.className ?? ""}`}>
+      <body 
+      suppressHydrationWarning={true} 
+      className={`min-h-screen bg-background font-sans antialiased ${inter.className ?? ""}`}
+      >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <div className="flex min-h-screen items-center justify-center">
+            <div className="w-full max-w-10xl px-4">{children}</div>
+          </div>
         </ThemeProvider>
       </body>
     </html>

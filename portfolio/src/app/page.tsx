@@ -80,9 +80,36 @@ export default function Page() {
       </div>
       
       <main className="container flex flex-col items-center justify-center px-4 md:px-6">
-
+        
         <section id="about" className="py-12 md:py-24 lg:py-32 text-center">
-          
+          <div className="container mx-auto px-6 md:px-12 lg:px-24">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Left Side - Title */}
+              <div className="md:col-span-1">
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white border-b-4 border-gray-300 pb-2">
+                  About Me
+                </h2>
+              </div>
+
+              {/* Right Side - Content */}
+              <div className="md:col-span-2 text-gray-600 dark:text-gray-300 space-y-4">
+                <p>
+                  Hi, I'm David Cui. My passions lie at the intersection between Technology, Euntrepreneurship, and Art. 
+                  I have been programming since 2022 and have experience in 
+                  Full-stack development, and ML Operations, and basic robotics.
+                </p>
+                <p>
+                  I have worked as a Lead Full-stack Developer at a student start-up Echo-Sync and a Lead ML Ops Engineer at Echo-Sync and Portal Carreer Discovery.
+                </p>
+                <p>
+                  I study Computer Science and Mathematics at Washington University in St. Louis.
+                </p>
+                <p>
+                  Other interests of mine include soccer, rock climbing, financial investing, and chess.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="projects" className="py-12 md:py-24 lg:py-32 text-center">

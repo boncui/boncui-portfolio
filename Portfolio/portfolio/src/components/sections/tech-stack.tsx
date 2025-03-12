@@ -1,23 +1,39 @@
-//tech-stack.tsx
-// /Users/boncui/Desktop/Projects/Personal Projects/boncui-portfolio/Portfolio/portfolio/src/app/components/tech-stack.tsx
 import { Card } from "@/components/common/card"
 
 const technologies = [
   {
-    category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "Redux", "GraphQL"],
+    category: "Languages & Frameworks",
+    skills: [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "TailwindCSS",
+      "Java",
+      "R",
+    ],
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    category: "Libraries & ML Tools",
+    skills: [
+      "TensorFlow",
+      "PyTorch",
+      "NumPy",
+      "Pandas",
+      "Scikit-Learn",
+      "Keras",
+      "Matplotlib",
+    ],
   },
   {
-    category: "DevOps",
-    skills: ["Docker", "AWS", "CI/CD", "Git", "Linux", "Nginx"],
+    category: "Databases & Cloud",
+    skills: ["MongoDB", "PostgreSQL", "SQL", "AWS"],
   },
   {
-    category: "Tools",
-    skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"],
+    category: "Development Tools",
+    skills: ["GitHub", "Docker", "VS Code"],
   },
 ]
 
@@ -42,4 +58,3 @@ export default function TechStack() {
     </div>
   )
 }
-

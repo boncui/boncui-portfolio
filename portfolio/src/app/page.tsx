@@ -7,12 +7,12 @@ import TechStack from "@/components/custom/tech-stack";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
+        <div className="container mx-auto flex h-14 items-center px-4 md:px-6">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
-              <span className="hidden font-bold sm:inline-block">John.dev</span>
+              <span className="hidden font-bold sm:inline-block">Davidcui.dev</span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="#about" className="transition-colors hover:text-foreground/80">
@@ -32,10 +32,10 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="container px-4 md:px-6">
-        <section id="about" className="py-12 md:py-24 lg:py-32">
+      <main className="container flex flex-col items-center justify-center px-4 md:px-6">
+        <section id="about" className="py-12 md:py-24 lg:py-32 text-center">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="flex flex-col items-center justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Full Stack Developer
@@ -58,7 +58,7 @@ export default function Page() {
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="d.cui@wustl.edu">
+                <Link href="mailto:d.cui@wustl.edu">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
@@ -69,9 +69,9 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="projects" className="py-12 md:py-24 lg:py-32">
+        <section id="projects" className="py-12 md:py-24 lg:py-32 text-center">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="E-commerce Platform"
@@ -107,7 +107,8 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="contact" className="py-12 md:py-24 lg:py-32">
+        {/* CONTACT FORM */}
+        <section id="contact" className="py-12 md:py-24 lg:py-32 w-full max-w-4xl text-center">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
@@ -119,6 +120,7 @@ export default function Page() {
         </section>
       </main>
 
+      {/* FOOTER */}
       <footer className="border-t">
         <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
           <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 John.dev. All rights reserved.</p>

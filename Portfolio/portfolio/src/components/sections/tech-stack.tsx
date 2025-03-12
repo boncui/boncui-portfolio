@@ -1,6 +1,6 @@
 //tech-stack.tsx
 // /Users/boncui/Desktop/Projects/Personal Projects/boncui-portfolio/Portfolio/portfolio/src/app/components/tech-stack.tsx
-import { Card } from "@/components/ui/card"
+import { Card } from "@/components/common/card"
 
 const technologies = [
   {

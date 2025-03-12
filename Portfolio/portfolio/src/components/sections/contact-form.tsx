@@ -2,12 +2,12 @@
 ///Users/boncui/Desktop/Projects/Personal Projects/boncui-portfolio/Portfolio/portfolio/src/app/components/contact-form.tsx
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/common/button"
+import { Card } from "@/components/common/card"
+import { Input } from "@/components/common/input"
+import { Textarea } from "@/components/common/textarea"
 import { useState } from "react"
-import { submitContactForm } from "../actions"
+import { submitContactForm } from "../../app/actions"
 
 export default function ContactForm() {
   const [pending, setPending] = useState(false)

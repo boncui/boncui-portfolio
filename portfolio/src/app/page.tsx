@@ -26,9 +26,11 @@ export default function Page() {
               </Link>
             </nav>
           </div>
-          <Button variant="outline" className="ml-auto">
-            Resume
-          </Button>
+            <Button variant="outline" className="ml-auto">
+            <a href="/resume.pdf" download="DavidCui_resume.pdf">
+              Resume
+            </a>
+            </Button>
         </div>
       </header>
 

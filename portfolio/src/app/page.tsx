@@ -8,6 +8,7 @@ import TechStack from "@/components/custom/tech-stack";
 export default function Page() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-background">
+      
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto flex h-14 items-center px-4 md:px-6">
           <div className="mr-4 hidden md:flex">
@@ -34,43 +35,54 @@ export default function Page() {
         </div>
       </header>
 
+      <div className="bg-background">
+        {/* Landing */}
+        <section id="landing" className="w-full min-h-screen flex flex-col justify-center items-center text-center">
+          <h1 className="text-5xl font-bold tracking-tighter">
+            David Cui
+          </h1>
+          <h2 className="text-3xl tracking-tighter">
+            Engineer | Innovator | Artist
+          </h2>
+          <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+          Creating elegant solutions from complex problems.
+          </p>
+        
+        <div className="space-x-4">
+          <Link href="https://github.com/boncui" target="_blank">
+            <Button variant="outline" size="icon">
+              <Github className="h-4 w-4" />
+              <span className="sr-only">GitHub</span>
+            </Button>
+          </Link>
+          <Link href="https://linkedin.com/in/boncui" target="_blank">
+            <Button variant="outline" size="icon">
+              <Linkedin className="h-4 w-4" />
+              <span className="sr-only">LinkedIn</span>
+            </Button>
+          </Link>
+          <Link href="mailto:d.cui@wustl.edu">
+            <Button variant="outline" size="icon">
+              <Mail className="h-4 w-4" />
+              <span className="sr-only">Email</span>
+            </Button>
+          </Link>
+        </div>
+
+        {/* Scroll Down Indicator */}
+        <div className="absolute bottom-10 animate-bounce">
+          <Link href="#about">
+            <Button variant="ghost" className="text-gray-400">↓ Scroll Down</Button>
+          </Link>
+        </div>
+        
+        </section>
+      </div>
+      
       <main className="container flex flex-col items-center justify-center px-4 md:px-6">
+
         <section id="about" className="py-12 md:py-24 lg:py-32 text-center">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-5xl font-bold tracking-tighter">
-                  David Cui
-                </h1>
-                <h2 className="text-3xl tracking-tighter">
-                  Engineer | Innovator | Artist
-                </h2>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Creating elegant solutions from complex problems.
-                </p>
-              </div>
-              <div className="space-x-4">
-                <Link href="https://github.com/boncui" target="_blank">
-                  <Button variant="outline" size="icon">
-                    <Github className="h-4 w-4" />
-                    <span className="sr-only">GitHub</span>
-                  </Button>
-                </Link>
-                <Link href="https://linkedin.com/in/boncui" target="_blank">
-                  <Button variant="outline" size="icon">
-                    <Linkedin className="h-4 w-4" />
-                    <span className="sr-only">LinkedIn</span>
-                  </Button>
-                </Link>
-                <Link href="mailto:d.cui@wustl.edu">
-                  <Button variant="outline" size="icon">
-                    <Mail className="h-4 w-4" />
-                    <span className="sr-only">Email</span>
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
+          
         </section>
 
         <section id="projects" className="py-12 md:py-24 lg:py-32 text-center">

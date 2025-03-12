@@ -26,8 +26,10 @@ export default function Page() {
               </Link>
             </nav>
           </div>
-          <Button variant="outline" className="ml-auto">
+          <Button asChild variant="outline" className="ml-auto">
+            <a href="/resume.pdf" download="DavidCui_Resume.pdf">
             Resume
+            </a>
           </Button>
         </div>
       </header>
@@ -46,25 +48,19 @@ export default function Page() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/boncui" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link href="https://linkedin.com/in/boncui/" target="_blank">
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://twitter.com" target="_blank">
-                  <Button variant="outline" size="icon">
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </Button>
-                </Link>
-                <Link href="mailto:hello@example.com">
+                <Link href="dcui@wustl.edu">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>

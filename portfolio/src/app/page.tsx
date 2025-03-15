@@ -4,6 +4,7 @@ import Link from "next/link"
 import ContactForm from "@/components/custom/contact-form";
 import ProjectCard from "@/components/custom/project-card";
 import TechStack from "@/components/custom/tech-stack";
+import ThreeDModel from "@/components/custom/3dmodel";
 
 export default function Page() {
   return (
@@ -36,7 +37,11 @@ export default function Page() {
       </header>
 
       <div className="bg-background">
+        {/* 3D Model Background */}
+        <ThreeDModel />
+
         {/* Landing */}
+        
         <section id="landing" className="w-full min-h-screen flex flex-col justify-center items-center text-center">
           <h1 className="text-5xl font-bold tracking-tighter">
             David Cui
@@ -123,23 +128,27 @@ export default function Page() {
               <ProjectCard
                 title="E-commerce Platform"
                 description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
+                type="Fullstack"
                 image="/placeholder.svg?height=400&width=600"
                 link="https://github.com"
                 tags={["Next.js", "Prisma", "Stripe"]}
               />
               <ProjectCard
-                title="Task Management App"
+                title="Melanoma Dectection"
                 description="A real-time task management application with team collaboration features."
-                image="/placeholder.svg?height=400&width=600"
+                type="ML"
+                image="/projectImgs"
                 link="https://github.com"
                 tags={["React", "Node.js", "Socket.io"]}
               />
               <ProjectCard
-                title="AI Chat Interface"
-                description="An AI-powered chat interface with natural language processing capabilities."
-                image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
-                tags={["OpenAI", "Next.js", "TailwindCSS"]}
+                title="Dungeons and Dragons game"
+                description="A simple DnD game. Project made on 07/2023"
+                type="Game"
+                image="/projectImgs/dnd.jpg" 
+                // siteLink="https://boncui.pythonanywhere.com"
+                link="https://github.com/boncui/Dungeons_n_dragons_combat"
+                tags={["Python", "Flask"]}
               />
             </div>
           </div>

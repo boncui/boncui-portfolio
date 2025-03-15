@@ -90,8 +90,8 @@ export default function Page() {
                 About Me
               </h2>
               <p>
-                Hi, I'm David Cui. My passions lie at the intersection between **Technology, Entrepreneurship, and Art**. 
-                I have been programming since 2022 and have experience in **Full-stack development, ML Operations, and basic robotics**.
+                Hi, I'm David Cui. My passions lie at the intersection between Science and Art. 
+                I have been programming since 2022 and have experience in Full-stack development, ML Operations, and basic robotics.
               </p>
               <p>
                 I have worked as a Lead Full-stack Developer at a student start-up Echo-Sync and a Lead ML Ops Engineer at Echo-Sync and Portal Career Discovery.
@@ -107,9 +107,9 @@ export default function Page() {
             {/* Right Side - Image */}
             <div className="flex flex-col items-center">
               <img 
-                src="/images/david-cui.jpg" 
+                src="/images/image3.png" 
                 alt="David Cui" 
-                className="w-64 h-64 rounded-lg shadow-lg object-cover"
+                className="w-75 h-75 rounded-lg shadow-lg object-cover"
               />
             </div>
           </div>

@@ -42,11 +42,11 @@ export default function Page() {
 
         {/* Landing */}
         
-        <section id="landing" className="w-full min-h-screen flex flex-col justify-center items-center text-center">
-          <h1 className="text-5xl font-bold tracking-tighter">
+        <section id="landing" className="w-full min-h-screen flex flex-col justify-center items-center text-center z-10">
+          <h1 className="text-5xl font-bold tracking-tighter text-white drop-shadow-2xl">
             David Cui
           </h1>
-          <h2 className="text-3xl tracking-tighter">
+          <h2 className="text-3xl tracking-tighter drop-shadow-2xl">
             Engineer | Innovator | Artist
           </h2>
           <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -80,7 +80,6 @@ export default function Page() {
             <Button variant="ghost" className="text-gray-400">↓ Scroll Down</Button>
           </Link>
         </div>
-        
         </section>
       </div>
       

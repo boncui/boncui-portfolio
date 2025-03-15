@@ -12,7 +12,12 @@ function Model() {
 // Apply a new color (override existing materials)
   scene.traverse((child) => {
     if (child.isMesh) {
-      child.material = new MeshStandardMaterial({ color: "#2e8464" }); // Change to any color (hex or "red", "blue")
+      child.material = new MeshStandardMaterial({ 
+        color: "#2e8464",
+        transparent: true,
+        roughness: 0.7, // Make it blend in better
+
+        }); // Change to any color (hex or "red", "blue")
     }
   });
 
@@ -25,14 +30,14 @@ function Model() {
     }
   });
 
-  return <primitive ref={modelRef} object={scene} scale={2} />;
+  return <primitive ref={modelRef} object={scene} scale={2} position={[0, 0, -3]} />;
 }
 
 export default function ThreeDModel() {
   return (
     <div className="absolute inset-0 w-full h-full z-0">
-      <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
-        <ambientLight intensity={1} />
+      <Canvas camera={{ position: [0, 2, 8], fov: 50 }}>
+        <ambientLight intensity={2} />
         <directionalLight position={[5, 5, 5]} />
         <Model />
       </Canvas>

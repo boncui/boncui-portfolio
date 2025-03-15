@@ -37,7 +37,7 @@ export default function ThreeDModel() {
   return (
     <div className="absolute inset-0 w-full h-full z-0">
       <Canvas camera={{ position: [15, 10, 10], fov: 50 }}>
-        <ambientLight intensity={2} />
+        <ambientLight intensity={2.22} />
         <directionalLight position={[5, 5, 5]} />
         <Model />
       </Canvas>

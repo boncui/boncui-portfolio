@@ -24,19 +24,19 @@ function Model() {
   // Rotate the model slowly at odd angles
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.002; // Slow rotation
+      modelRef.current.rotation.y += 0.0005; // Slow rotation
       modelRef.current.rotation.x = Math.sin(Date.now() * 0.0002) * 0.2; // Slight wobble
       modelRef.current.rotation.z = Math.cos(Date.now() * 0.0001) * 0.15; // Minor tilt
     }
   });
 
-  return <primitive ref={modelRef} object={scene} scale={2} position={[0, 0, -3]} />;
+  return <primitive ref={modelRef} object={scene} scale={2} position={[4, 2, -3]} />;
 }
 
 export default function ThreeDModel() {
   return (
     <div className="absolute inset-0 w-full h-full z-0">
-      <Canvas camera={{ position: [0, 2, 8], fov: 50 }}>
+      <Canvas camera={{ position: [15, 10, 10], fov: 50 }}>
         <ambientLight intensity={2} />
         <directionalLight position={[5, 5, 5]} />
         <Model />

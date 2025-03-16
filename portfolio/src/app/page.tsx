@@ -145,7 +145,7 @@ export default function Page() {
                 description="A simple DnD game. Project made on 07/2023"
                 type="Game"
                 image="/projectImgs/dnd.jpg" 
-                // siteLink="https://boncui.pythonanywhere.com"
+                siteLink="https://boncui.pythonanywhere.com"
                 link="https://github.com/boncui/Dungeons_n_dragons_combat"
                 tags={["Python", "Flask"]}
               />

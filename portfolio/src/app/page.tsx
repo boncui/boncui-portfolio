@@ -53,33 +53,33 @@ export default function Page() {
           Creating elegant solutions from complex problems.
           </p>
         
-        <div className="space-x-4">
-          <Link href="https://github.com/boncui" target="_blank">
-            <Button variant="outline" size="icon">
-              <Github className="h-4 w-4" />
-              <span className="sr-only">GitHub</span>
-            </Button>
-          </Link>
-          <Link href="https://linkedin.com/in/boncui" target="_blank">
-            <Button variant="outline" size="icon">
-              <Linkedin className="h-4 w-4" />
-              <span className="sr-only">LinkedIn</span>
-            </Button>
-          </Link>
-          <Link href="mailto:d.cui@wustl.edu">
-            <Button variant="outline" size="icon">
-              <Mail className="h-4 w-4" />
-              <span className="sr-only">Email</span>
-            </Button>
-          </Link>
-        </div>
+          <div className="space-x-4 z-10">
+            <Link href="https://github.com/boncui" target="_blank">
+              <Button variant="outline" size="icon">
+                <Github className="h-4 w-4" />
+                <span className="sr-only">GitHub</span>
+              </Button>
+            </Link>
+            <Link href="https://linkedin.com/in/boncui" target="_blank">
+              <Button variant="outline" size="icon">
+                <Linkedin className="h-4 w-4" />
+                <span className="sr-only">LinkedIn</span>
+              </Button>
+            </Link>
+            <Link href="mailto:d.cui@wustl.edu">
+              <Button variant="outline" size="icon">
+                <Mail className="h-4 w-4" />
+                <span className="sr-only">Email</span>
+              </Button>
+            </Link>
+          </div>
 
-        {/* Scroll Down Indicator */}
-        <div className="absolute bottom-10 animate-bounce">
-          <Link href="#about">
-            <Button variant="ghost" className="text-gray-400">↓ Scroll Down</Button>
-          </Link>
-        </div>
+          {/* Scroll Down Indicator */}
+          <div className="absolute bottom-10 animate-bounce">
+            <Link href="#about">
+              <Button variant="ghost" className="text-gray-400">↓ Scroll Down</Button>
+            </Link>
+          </div>
         </section>
       </div>
       
@@ -136,8 +136,8 @@ export default function Page() {
                 title="Melanoma Dectection"
                 description="A real-time task management application with team collaboration features."
                 type="ML"
-                image="/projectImgs"
-                link="https://github.com"
+                image="/projectImgs/mela.jpg"
+                link="https://github.com/boncui/Melanoma-Classification"
                 tags={["React", "Node.js", "Socket.io"]}
               />
               <ProjectCard

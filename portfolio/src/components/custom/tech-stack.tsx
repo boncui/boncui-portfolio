@@ -43,7 +43,7 @@ const techIcons: { [key: string]: string } = {
   NumPy: "/techstack/numpy.png",
   Keras: "/techstack/keras.png",
   Matplot: "/techstack/matplotlib.png",
-  "Scikit-Learn": "/techstack/scikit.png",
+  "Scikit-Learn": "/techstack/sklearn.png",
   Seaborn: "/techstack/seaborn.png",
   React: "/techstack/react.png",
   "Next.js": "/techstack/next_js.png",

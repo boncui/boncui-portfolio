@@ -125,20 +125,20 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Projects</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="E-commerce Platform"
-                description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
+                title="StudentSwap"
+                description="A full-stack centralized platform for students to trade sublease contracts built with Typescript, React, and MongoDb."
                 type="Fullstack"
                 image="/placeholder.svg?height=400&width=600"
-                link="https://github.com"
+                link="https://github.com/boncui/StudentSwap"
                 tags={["Next.js", "Prisma", "Stripe"]}
               />
               <ProjectCard
                 title="Melanoma Dectection"
                 description="A real-time task management application with team collaboration features."
                 type="ML"
-                image="/projectImgs/mela.jpg"
+                image="/projectImgs/mela.png"
                 link="https://github.com/boncui/Melanoma-Classification"
-                tags={["React", "Node.js", "Socket.io"]}
+                tags={["Tensorflow", "Keras", "Python"]}
               />
               <ProjectCard
                 title="Dungeons and Dragons game"

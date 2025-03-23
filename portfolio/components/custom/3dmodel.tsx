@@ -3,16 +3,16 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { useRef } from "react";
-import { MeshStandardMaterial } from "three";
+import { Group, Object3D, Mesh, MeshStandardMaterial } from "three";
 
 function Model() {
   const { scene } = useGLTF("/landing/model.glb"); // Ensure correct path
-  const modelRef = useRef();
+  const modelRef = useRef<Group>(null);
 
 // Apply a new color (override existing materials)
   scene.traverse((child) => {
-    if (child.isMesh) {
-      child.material = new MeshStandardMaterial({ 
+    if ((child as Mesh).isMesh) {
+      (child as Mesh).material = new MeshStandardMaterial({
         color: "#2e8464",
         transparent: true,
         roughness: 0.7, // Make it blend in better

@@ -128,9 +128,10 @@ export default function Page() {
                 title="StudentSwap"
                 description="A full-stack centralized platform for students to trade sublease contracts built with Typescript, React, and MongoDb."
                 type="Fullstack"
-                image="/placeholder.svg?height=400&width=600"
+                image="/projectImgs/studentswap.png"
+                siteLink="https://student-swap.vercel.app/"
                 link="https://github.com/boncui/StudentSwap"
-                tags={["Next.js", "Prisma", "Stripe"]}
+                tags={["Typescript", "React", "MongoDB", "Tailwind CSS", "Express", "Node.js"]}
               />
               <ProjectCard
                 title="Melanoma Dectection"

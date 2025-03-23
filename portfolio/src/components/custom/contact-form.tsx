@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useActionState } from "react"; // Use `useActionState` instead of `useFormState`
-import { submitContactForm } from "../../app/actions"; // Import fixed Server Action
+import { submitContactForm } from "../../../app/actions"; // Import fixed Server Action
 
 export default function ContactForm() {
   const [state, formAction] = useActionState(submitContactForm, { message: "" });

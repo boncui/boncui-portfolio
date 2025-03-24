@@ -1,12 +1,15 @@
 // next.config.js
 
+const withTM = require('next-transpile-modules')([
+  '@react-three/fiber',
+  '@react-three/drei',
+]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   experimental: {
-    // only include this if you're using App Router features
     serverActions: {},
   },
 };
 
-module.exports = nextConfig;
+module.exports = withTM(nextConfig);
